@@ -1,0 +1,7 @@
+#! /usr/bin/expect
+
+## auto password setup
+spawn bash -c "apt-get install -y racoon"
+expect -re "<Ok>"
+send "\r"
+interact
